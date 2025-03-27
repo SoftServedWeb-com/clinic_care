@@ -10,9 +10,9 @@
 
 ## DocType Creation
 
-- [ ] Create Patient DocType
+- [x] Create Patient DocType
 - [ ] Create Healthcare Practitioner DocType
-- [ ] Create Practitioner Schedule DocType
+- [x] Create Practitioner Schedule DocType
 - [ ] Create Patient Appointment DocType
 - [ ] Create Patient Encounter DocType
 - [ ] Create Treatment Plan DocType
@@ -132,3 +132,4 @@
 ## Aditional Features
 
 - [ ] When the healthcare practitioner is not available, the system should suggest the patient to schedule an appointment with another practitioner. ( HRMS )
+
