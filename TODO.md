@@ -129,3 +129,6 @@
 - [ ] Develop feature request process
 - [ ] Create system for gathering user feedback
 
+## Aditional Features
+
+- [ ] When the healthcare practitioner is not available, the system should suggest the patient to schedule an appointment with another practitioner. ( HRMS )
