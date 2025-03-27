@@ -1,0 +1,85 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-03-27 11:54:54.729498",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "general_tab",
+  "general_settings_section",
+  "link_customer_to_patient",
+  "column_break_pyix",
+  "registration_fee",
+  "collect_fee",
+  "tab_2_tab"
+ ],
+ "fields": [
+  {
+   "fieldname": "general_tab",
+   "fieldtype": "Tab Break",
+   "label": "General"
+  },
+  {
+   "fieldname": "general_settings_section",
+   "fieldtype": "Section Break",
+   "label": "General Settings"
+  },
+  {
+   "bold": 1,
+   "default": "1",
+   "description": "If checked, a customer will be created, mapped to Patient. Patient Invoices will be created against this Customer. You can also select existing Customer while creating Patient.",
+   "fieldname": "link_customer_to_patient",
+   "fieldtype": "Check",
+   "label": "Link Customer to Patient"
+  },
+  {
+   "fieldname": "tab_2_tab",
+   "fieldtype": "Tab Break",
+   "label": "Tab 2"
+  },
+  {
+   "fieldname": "column_break_pyix",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "-1",
+   "fieldname": "registration_fee",
+   "fieldtype": "Int",
+   "label": "Registration Fee",
+   "mandatory_depends_on": "collect_fee",
+   "non_negative": 1
+  },
+  {
+   "bold": 1,
+   "default": "0",
+   "description": "Checking this will create new Patients with a Disabled status by default and will only be enabled after invoicing the Registration Fee.",
+   "fieldname": "collect_fee",
+   "fieldtype": "Check",
+   "label": "Collect Fee for Patient Registration"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "issingle": 1,
+ "links": [],
+ "modified": "2025-03-27 12:03:00.419989",
+ "modified_by": "Administrator",
+ "module": "Clinic Care",
+ "name": "Clinic Care Settings",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
