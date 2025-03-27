@@ -17,7 +17,7 @@ class Patient(Document):
 		"""
 		Genereates a unique patient name based on the naming series defined in the Clinic Care Settings.
 		"""
-		patient_name_by = frappe.db.get_single_value("Healthcare Settings", "patient_name_by")
+		patient_name_by = frappe.db.get_single_value("Clinic Care Settings", "patient_name_by")
 		if patient_name_by == "Patient Name":
 			self.name = self.get_patient_name()
 		else:
