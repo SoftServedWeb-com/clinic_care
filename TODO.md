@@ -11,7 +11,7 @@
 ## DocType Creation
 
 - [x] Create Patient DocType
-- [ ] Create Healthcare Practitioner DocType
+- [x] Create Healthcare Practitioner DocType
 - [x] Create Practitioner Schedule DocType
 - [ ] Create Patient Appointment DocType
 - [ ] Create Patient Encounter DocType
