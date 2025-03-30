@@ -19,7 +19,8 @@
   "residence_phone",
   "office_phone",
   "section_break_etdv",
-  "practitioner_schedule"
+  "practitioner_schedule",
+  "appointments"
  ],
  "fields": [
   {
@@ -98,20 +99,26 @@
   {
    "fieldname": "section_break_etdv",
    "fieldtype": "Section Break",
-   "label": "Schedule"
+   "label": "Schedules & Appointments"
   },
   {
    "fieldname": "practitioner_schedule",
    "fieldtype": "Table",
    "label": "Practitioner Schedule",
    "options": "Practitioner Schedule Unit"
+  },
+  {
+   "fieldname": "appointments",
+   "fieldtype": "Table",
+   "label": "Appointments",
+   "options": "Practitioner Appointment Unit"
   }
  ],
  "grid_page_length": 50,
  "image_field": "image",
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-03-28 10:50:41.135308",
+ "modified": "2025-03-28 12:54:30.864962",
  "modified_by": "Administrator",
  "module": "Clinic Care",
  "name": "Healthcare Practitioner",
