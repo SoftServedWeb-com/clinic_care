@@ -7,6 +7,7 @@
  "field_order": [
   "general_tab",
   "general_settings_section",
+  "patient_name_by",
   "link_customer_to_patient",
   "column_break_pyix",
   "registration_fee",
@@ -42,7 +43,7 @@
    "fieldtype": "Column Break"
   },
   {
-   "default": "-1",
+   "default": "0",
    "fieldname": "registration_fee",
    "fieldtype": "Int",
    "label": "Registration Fee",
@@ -56,13 +57,20 @@
    "fieldname": "collect_fee",
    "fieldtype": "Check",
    "label": "Collect Fee for Patient Registration"
+  },
+  {
+   "default": "Series",
+   "fieldname": "patient_name_by",
+   "fieldtype": "Select",
+   "label": "Patient Name By",
+   "options": "\nPatient Name\nSeries"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "issingle": 1,
  "links": [],
- "modified": "2025-03-27 12:03:00.419989",
+ "modified": "2025-03-30 15:42:05.613147",
  "modified_by": "Administrator",
  "module": "Clinic Care",
  "name": "Clinic Care Settings",
