@@ -18,8 +18,8 @@
   "patient_name",
   "gender",
   "blood_group",
-  "date_of_birth",
-  "age",
+  "dob",
+  "age_html",
   "image",
   "column_break_fxiz",
   "mobile",
@@ -89,17 +89,6 @@
    "fieldtype": "Select",
    "label": "Blood Group",
    "options": "\nA Positive\nA Negative\nAB Positive\nAB Negative\nB Positive\nB Negative\nO Positive\nO Negative"
-  },
-  {
-   "fieldname": "date_of_birth",
-   "fieldtype": "Date",
-   "label": "Date of birth"
-  },
-  {
-   "fieldname": "age",
-   "fieldtype": "Int",
-   "label": "Age",
-   "non_negative": 1
   },
   {
    "fieldname": "image",
@@ -254,6 +243,16 @@
    "fieldtype": "Link",
    "label": "Lead",
    "options": "Lead"
+  },
+  {
+   "fieldname": "dob",
+   "fieldtype": "Date",
+   "label": "Date of birth"
+  },
+  {
+   "fieldname": "age_html",
+   "fieldtype": "HTML",
+   "label": "Age"
   }
  ],
  "grid_page_length": 50,
@@ -262,7 +261,7 @@
  "index_web_pages_for_search": 1,
  "links": [],
  "max_attachments": 50,
- "modified": "2025-03-27 11:49:20.807030",
+ "modified": "2025-03-30 15:40:12.782267",
  "modified_by": "Administrator",
  "module": "Clinic Care",
  "name": "Patient",
