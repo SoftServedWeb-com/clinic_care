@@ -118,7 +118,7 @@
  "image_field": "image",
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-03-28 12:54:30.864962",
+ "modified": "2025-03-31 14:12:54.852793",
  "modified_by": "Administrator",
  "module": "Clinic Care",
  "name": "Healthcare Practitioner",
@@ -138,7 +138,18 @@
    "write": 1
   }
  ],
+ "show_title_field_in_link": 1,
  "sort_field": "modified",
  "sort_order": "DESC",
- "states": []
+ "states": [
+  {
+   "color": "Green",
+   "title": "Active"
+  },
+  {
+   "color": "Red",
+   "title": "Disabled"
+  }
+ ],
+ "title_field": "practitioner_name"
 }

@@ -8,21 +8,27 @@
  "field_order": [
   "naming_series",
   "patient",
+  "appointment_for",
   "practitioner",
+  "status",
+  "appointment_datetime",
   "column_break_aohi",
+  "duration",
   "appointment_date",
-  "time_slot",
-  "start_time",
-  "end_time"
+  "appointment_time"
  ],
  "fields": [
   {
+   "default": "CLC-APP-.YYYY.-",
    "fieldname": "naming_series",
    "fieldtype": "Select",
+   "hidden": 1,
    "in_list_view": 1,
    "label": "Series",
    "options": "CLC-APP-.YYYY.-",
-   "reqd": 1
+   "read_only": 1,
+   "reqd": 1,
+   "show_on_timeline": 1
   },
   {
    "fieldname": "patient",
@@ -32,11 +38,12 @@
    "reqd": 1
   },
   {
+   "depends_on": "eval:doc.appointment_for == 'Practitioner';",
    "fieldname": "practitioner",
    "fieldtype": "Link",
    "label": "Practitioner",
-   "options": "Healthcare Practitioner",
-   "reqd": 1
+   "mandatory_depends_on": "eval:doc.appointment_for == 'Practitioner';",
+   "options": "Healthcare Practitioner"
   },
   {
    "fieldname": "column_break_aohi",
@@ -49,28 +56,45 @@
    "reqd": 1
   },
   {
-   "fieldname": "time_slot",
+   "fieldname": "appointment_for",
    "fieldtype": "Select",
-   "label": "Time Slot",
+   "label": "Appointment For",
+   "options": "\nPractitioner\nService",
    "reqd": 1
   },
   {
-   "fieldname": "start_time",
+   "fieldname": "appointment_time",
    "fieldtype": "Time",
-   "label": "Start Time",
+   "label": "Time",
    "read_only": 1
   },
   {
-   "fieldname": "end_time",
-   "fieldtype": "Time",
-   "label": "End Time",
+   "default": "Scheduled",
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "Scheduled\nOpen\nClosed\nCancelled",
+   "reqd": 1
+  },
+  {
+   "default": "30",
+   "fieldname": "duration",
+   "fieldtype": "Int",
+   "label": "Duration",
+   "non_negative": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "appointment_datetime",
+   "fieldtype": "Datetime",
+   "label": "Appointment Datetime",
    "read_only": 1
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-03-28 13:01:26.193729",
+ "modified": "2025-03-31 14:55:44.664654",
  "modified_by": "Administrator",
  "module": "Clinic Care",
  "name": "Patient Appointment",

@@ -26,6 +26,7 @@
   "phone",
   "email",
   "lead",
+  "status",
   "more_information_section",
   "patient_details",
   "dashboard_tab",
@@ -253,6 +254,13 @@
    "fieldname": "age_html",
    "fieldtype": "HTML",
    "label": "Age"
+  },
+  {
+   "default": "Active",
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "Active\nInactive"
   }
  ],
  "grid_page_length": 50,
@@ -261,7 +269,7 @@
  "index_web_pages_for_search": 1,
  "links": [],
  "max_attachments": 50,
- "modified": "2025-03-30 15:40:12.782267",
+ "modified": "2025-03-31 11:45:18.777954",
  "modified_by": "Administrator",
  "module": "Clinic Care",
  "name": "Patient",
@@ -320,7 +328,16 @@
  "show_title_field_in_link": 1,
  "sort_field": "modified",
  "sort_order": "DESC",
- "states": [],
+ "states": [
+  {
+   "color": "Green",
+   "title": "Active"
+  },
+  {
+   "color": "Red",
+   "title": "Inactive"
+  }
+ ],
  "title_field": "patient_name",
  "track_changes": 1
 }
