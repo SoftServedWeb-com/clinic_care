@@ -1,0 +1,38 @@
+{
+ "charts": [],
+ "content": "[{\"id\":\"qx0t6jIT3d\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">Clinic Care</span>\",\"col\":12}},{\"id\":\"Jsua8gjlBo\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"New Appointment\",\"col\":3}}]",
+ "creation": "2025-03-31 19:43:15.913220",
+ "custom_blocks": [],
+ "docstatus": 0,
+ "doctype": "Workspace",
+ "for_user": "",
+ "hide_custom": 0,
+ "icon": "healthcare",
+ "idx": 0,
+ "indicator_color": "",
+ "is_hidden": 0,
+ "label": "Clinic Care",
+ "links": [],
+ "modified": "2025-03-31 19:45:32.032266",
+ "modified_by": "Administrator",
+ "module": "Clinic Care",
+ "name": "Clinic Care",
+ "number_cards": [],
+ "owner": "Administrator",
+ "parent_page": "",
+ "public": 1,
+ "quick_lists": [],
+ "roles": [],
+ "sequence_id": 2.0,
+ "shortcuts": [
+  {
+   "color": "Grey",
+   "doc_view": "New",
+   "label": "New Appointment",
+   "link_to": "Patient Appointment",
+   "stats_filter": "[]",
+   "type": "DocType"
+  }
+ ],
+ "title": "Clinic Care"
+}
