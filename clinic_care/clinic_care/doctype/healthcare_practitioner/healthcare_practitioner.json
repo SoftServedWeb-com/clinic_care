@@ -1,5 +1,6 @@
 {
  "actions": [],
+ "allow_import": 1,
  "allow_rename": 1,
  "autoname": "naming_series:",
  "creation": "2025-03-27 18:15:15.678727",
@@ -117,8 +118,13 @@
  "grid_page_length": 50,
  "image_field": "image",
  "index_web_pages_for_search": 1,
- "links": [],
- "modified": "2025-03-31 14:12:54.852793",
+ "links": [
+  {
+   "link_doctype": "Patient Appointment",
+   "link_fieldname": "practitioner"
+  }
+ ],
+ "modified": "2025-03-31 15:39:04.574880",
  "modified_by": "Administrator",
  "module": "Clinic Care",
  "name": "Healthcare Practitioner",
@@ -138,6 +144,9 @@
    "write": 1
   }
  ],
+ "quick_entry": 1,
+ "search_fields": "practitioner_name",
+ "show_name_in_global_search": 1,
  "show_title_field_in_link": 1,
  "sort_field": "modified",
  "sort_order": "DESC",
@@ -151,5 +160,6 @@
    "title": "Disabled"
   }
  ],
- "title_field": "practitioner_name"
+ "title_field": "practitioner_name",
+ "track_changes": 1
 }
